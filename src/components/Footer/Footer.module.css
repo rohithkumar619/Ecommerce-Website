@@ -1,0 +1,64 @@
+.foot {
+  border-top: 1.5px solid white;
+  margin-top: 7rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.footer {
+  width: 90%;
+  display: flex;
+  margin-top: 3rem;
+  margin-left: 3rem;
+  margin-right: 3rem;
+  justify-content: space-between;
+}
+.footername {
+  display: flex;
+  gap: 0.4rem;
+}
+.logo {
+  width: 2.5rem;
+  height: 2.5rem;
+}
+.footername > :nth-child(2) {
+  font-size: 15px;
+  font-weight: bold;
+}
+.elements > :nth-child(1) {
+  font-weight: 600;
+  font-style: normal;
+}
+.inelement {
+  display: flex;
+  margin-top: 1rem;
+}
+.icon {
+  width: 20px;
+  height: 20px;
+}
+.inelement > :nth-child(2) {
+  font-size: 12px;
+  margin-left: 1rem;
+  font-style: italic;
+}
+.copyright {
+  display: flex;
+  flex-direction: column;
+  font-size: 12px;
+  align-items: center;
+  margin-top: 1rem;
+}
+@media screen and (max-width: 600px) {
+  .footer {
+    flex-direction: column;
+    gap: 2rem;
+  }
+}
+@media screen and (max-width: 856px) {
+  .footer {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 2rem;
+  }
+}

@@ -1,0 +1,70 @@
+.virtual {
+  display: flex;
+  margin-top: 3rem;
+  padding: 2rem;
+  justify-content: space-between;
+  margin-bottom: 6rem;
+  margin-left: 6rem;
+}
+.left {
+  display: flex;
+  flex-direction: column;
+}
+.left > :first-child {
+  font-size: 2.3rem;
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+}
+.left > :nth-child(2) {
+  font-size: 1.5rem;
+  width: 20rem;
+  margin-bottom: 1.5rem;
+}
+.left > :nth-child(3) {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+.left img {
+  width: 150px;
+}
+.wrapper {
+  width: 30rem;
+}
+@media screen and (max-width: 856px) {
+  .virtual {
+    margin-bottom: 1rem;
+    margin-left: 2rem;
+  }
+  .wrapper {
+    width: 26rem;
+  }
+}
+@media screen and (max-width: 600px) {
+  .virtual {
+    margin-top: 1rem;
+    padding: 1rem;
+    flex-direction: column;
+    margin-bottom: 1rem;
+    margin-left: 2rem;
+    align-items: center;
+  }
+
+  .left > :first-child {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+  .left > :nth-child(2) {
+    font-size: 1.2rem;
+    width: 20rem;
+    margin-bottom: 1rem;
+  }
+  .left > :nth-child(3) {
+    font-size: 1rem;
+  }
+  .left img {
+    width: 90px;
+  }
+  .wrapper {
+    width: 17rem;
+  }
+}
